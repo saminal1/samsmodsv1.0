@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="Sams_Working_Stuff_NoSinks" />
+		<DisplayName value="Sam's Working Stuff - No Sinks" />
+		<Description value="Functional versions of some deco blocks. Sinks removed to avoid breaking the meta" />
+		<Author value="Saminal" />
+		<Version value="v1.0.1" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+</xml>

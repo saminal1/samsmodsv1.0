@@ -1,0 +1,25 @@
+<!--
+Sam's Working Stuff
+v20.0.0
+by saminal
+
+progression.xml
+-->
+
+<configs>
+
+<!-- SJ: Add the Player Light Helper to the Electrician crafting skill -->
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@unlock_level='25']/unlock_entry/@item">,lightPlayerVariantHelper</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='25,100']/@tags">,lightPlayerVariantHelper</append>
+
+<!-- SJ: Add Working Wall Ovens to the Home Cooking crafting skill -->
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@unlock_level='11,14,18,22,26']/unlock_entry[@item='foodSteakAndPotato']/@item">,cntCharcoalGrillWorking,cntGasGrillWorking</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='26,100']/@tags">,cntCharcoalGrillWorking,cntGasGrillWorking</append>
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/display_entry[@unlock_level='27,35,43,51,59']/unlock_entry[@item='foodChiliDog']/@item">,cntWallOvenWorking,cntStoveWorking</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingFood']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='51,100']/@tags">,cntWallOvenWorking,cntStoveWorking</append>
+
+
+</configs>

@@ -1,0 +1,31 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+cntWallOvenWorking,blocks,Block,,,Working Wall Oven
+cntStoveWorking,blocks,Block,,,Working Modern Stove
+tableLampLightPlayer,blocks,Light,,,Table Lamp
+workLightPlayer,blocks,Light,,,Work Light
+signExitLightPlayer,blocks,Light,,,Exit Sign
+ceilingFanLightPlayer,blocks,Light,,,Ceiling Fan Light
+signShopOpenPlayer,blocks,Sign,,,Shop Sign: Open
+deskLampLightPlayer,blocks,Light,,,Desk Lamp
+lightPlayerVariantHelper,blocks,Light,,,Working Lamps and Lights
+sconce1LightShadowPlayer,blocks,Light,,,Sconce Light
+porchLight01Player,blocks,Light,,,Old Outdoor Light
+porchLight04BrassPlayer,blocks,Light,,,Brass Outdoor Light
+cntGasGrillWorking,blocks,Block,,,Working Gas Grill
+cntCharcoalGrillWorking,blocks,Block,,,Working Charcoal Grill
+porchLight04Player,blocks,Light,,,Iron Outdoor Light
+ceilingLight02Player,blocks,Light,,,Silver Dome Light
+ceilingLight02BrassPlayer,blocks,Light,,,Brass Dome Light
+ceilingLight04Player,blocks,Light,,,Warehouse Ceiling Light
+ceilingLight05Player,blocks,Light,,,Silver Glass Light
+ceilingLight05BrassPlayer,blocks,Light,,,Brass Glass Light
+recessedLightPlayer,blocks,Light,,,Recessed Light
+wallLight01Player,blocks,Light,,,Warehouse Outdoor Light
+fluorescentLightPlayer,blocks,Light,,,Hanging Fluorescent Light
+trackLightPlayer,blocks,Light,,,Track Light
+chandelierLightPlayer,blocks,Light,,,Chandelier
+sinkKitchenWorking,blocks,Block,,,Working Kitchen Sink
+sinkCounterWorking,blocks,Block,,,Sink with Water Filter
+FilterSinkDesc,blocks,Block,,,"Craft this sink to have quicker access to water. With its dual-filter system, you get clean drinking water in only a few minutes!"
+KitchenSinkDesc,blocks,Block,,,"Craft this sink to have quicker access to water. It doesn't contain a filter, so you'll only get murky water out of it, but it's better than nothing, right?"
+stoveWorkingDesc,blocks,Block,,,"A place to cook food."
