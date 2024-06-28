@@ -1,0 +1,50 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+woodDecoBlockVariantHelper,blocks,Variant,,,Wood Deco Items
+metalDecoBlockVariantHelper,blocks,Variant,,,Metal Deco Items
+mixedDecoBlockVariantHelper,blocks,Variant,,,Wood and Metal Deco Items
+polymerDecoBlockVariantHelper,blocks,Variant,,,Polymer Deco Items
+concreteDecoBlockVariantHelper,blocks,Variant,,,Concrete Deco Items
+electricDecoBlockVariantHelper,blocks,Variant,,,Electronic Deco Items
+glassDecoBlockVariantHelper,blocks,Variant,,,Glass Deco Items
+birdBathPlanterDeco,blocks,Block,,,Deco Bird Bath Planter
+vendingMachineDecoBlockVariantHelper,blocks,Container,,,Deco Vending Machines
+cntVendingMachine2BrokenDeco,blocks,Container,,,Deco Drinks Vending Machine
+cntVendingMachineEnergyBrokenDeco,blocks,Container,,,Deco Energy Drinks Vending Machine
+cntVendingMachineWaterBrokenDeco,blocks,Container,,,Deco Water Vending Machine
+cntVendingMachineSnacksFullBrokenDeco,blocks,Container,,,Deco Snacks Vending Machine
+cntPurse01Deco,blocks,Container,,,Deco Purse
+cntDuffle01Deco,blocks,Container,,,Deco Duffle Bag
+cntHardenedChestSecureDeco,blocks,Container,,,Deco Hardened Chest
+cntSecureStorageChestHeroDeco,blocks,block,,,Reinforced Storage Chest
+decoEmberPileFire,blocks,Deco,,,Deco Fireplace Embers 1
+decoEmberPileFire2,blocks,Deco,,,Deco Fireplace Embers 2
+decoEmberPileFireDesc,blocks,Deco,,,These flaming embers lend some warmth and comfort to a cold concrete base.
+cntWoodBurningStoveFire,blocks,Deco,,,Deco Wood Burning Stove
+cntWoodBurningStoveFireDesc,blocks,Deco,,,Bring the heat to your hearth with an old-fashioned wood burning stove.
+modularFireWoodStackCFire,blocks,Deco,,,Deco Fireplace Wood
+decoTableSaw,blocks,Deco,,,Deco Table Saw
+decoBookcase,blocks,Deco,,,Deco Bookcase
+decoCoffinWildWestCracked,blocks,Deco,,,Deco Wild West Coffin Closed
+decoCoffinWildWestCracked,blocks,Deco,,,Deco Wild West Coffin Cracked
+decoCoffinWildWestStack,blocks,Deco,,,Deco Wild West Coffin Stack
+decoCoffinWildWestLeaning,blocks,Deco,,,Deco Wild West Coffin Leaning
+decoCoffinWildWestLidLeaning,blocks,Deco,,,Deco Wild West Coffin Lid Leaning
+decoFileCabinetTallClosed,blocks,Deco,,,Deco Tall File Cabinet
+decoFileCabinetShortClosed,blocks,Deco,,,Deco Short File Cabinet
+decoCashRegister,blocks,Deco,,,Deco Cash Register
+decoToolBoxClosedRed,blocks,Deco,,,Deco Toolbox
+decoRollingToolBoxClosedRed,blocks,Deco,,,Deco Rolling Toolbox
+decoUtilityCartFull,blocks,Deco,,,Deco Utility Cart
+decoGunRackSmallMagazines,blocks,Deco,,,Deco Gun Rack - Magazines
+decoGunRackSmallArmor,blocks,Deco,,,Deco Gun Rack - Armor
+decoGunRackLargeGuns01,blocks,Deco,,,Deco Large Gun Rack - Guns
+decoGunRackLargeGuns02,blocks,Deco,,,Deco Large Gun Rack - Guns
+decoSuitcase,blocks,Deco,,,Deco Suitcase
+decoMicrowaveOvenVer1Closed,blocks,Deco,,,Deco Microwave Oven
+decoRetroFridgeVer1Closed,blocks,Deco,,,Deco Retro Fridge
+decoFridgeStainlessSteel,blocks,Deco,,,Deco Stainless Steel Fridge
+decoWasherClosed,blocks,Deco,,,Deco Washer
+decoDryerClosed,blocks,Deco,,,Deco Dryer
+decoDishwasherFullWhite_Player,blocks,Deco,,,Deco Dishwasher
+decoMedicineCabinetFaucetClosed,blocks,Deco,,,Deco Medicine Cabinet (with Faucet)
+decoMedicineCabinetClosed,blocks,Deco,,,Deco Medicine Cabinet

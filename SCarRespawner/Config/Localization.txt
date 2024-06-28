@@ -1,0 +1,26 @@
+Key,File,Type,english,german
+carsRandomRespawner,blocks,block,Random Car Respawner,Zufälliger Auto Respawner
+busRandomHelper,blocks,block,Random Bus Helper,Zufälliger Bus Helferblock
+serviceTrucksRandomHelper,blocks,block,Random Service Truck Helper,Zufälliger Lieferwagen Helferblock
+armyTrucksRandomRespawner,blocks,block,Random Army Truck Respawner,Zufälliger Armee-LKW Respawner
+serviceTrucksRandomRespawner,blocks,block,Random Service Truck Respawner,Zufälliger Lieferwagen Respawner
+busRandomRespawner,blocks,block,Random Bus Respawner,Zufälliger Bus Respawner
+busShortRespawner,blocks,block,Short Bus Respawner,Zufälliger Kurzbus Respawner
+tractorsRandomHelper,blocks,block,Random Tractor Helper,Zufälliger Traktor Helferblock
+excavatorsRandomHelper,blocks,block,Random Excavator Helper,Zufälliger Bagger Helferblock
+excavatorClawsRandomHelper,blocks,block,Random Claw Excavator Helper,Zufälliger Klauen-Bagger Helferblock
+backhoesRandomHelper,blocks,block,Random Back Hoe Helper,Zufälliger Baggerlader Helferblock
+cars3WideRandomRespawner,blocks,block,Random Car Respawner,Zufälliger Auto Respawner
+farmTrucksRandomRespawner,blocks,block,Random Farm Truck Respawner,Zufälliger Farm-LKW Respawner
+tractorsRandomRespawner,blocks,block,Random Tractor Respawner,Zufälliger Traktor Respawner
+excavatorsRandomRespawner,blocks,block,Random Excavator Respawner,Zufälliger Bagger Respawner
+excavatorClawsRandomRespawner,blocks,block,Random Claw Excavator Respawner,Zufälliger Klauen-Bagger Respawner
+backhoesRandomRespawner,blocks,block,Random Backhoe Respawner,Zufälliger Baggerlader Respawner
+policeCarRandomRespawner,blocks,block,Police Car Respawner,Zufälliger Polizeiauto Respawner
+FireTruckRandomRespawner,blocks,block,Random Fire Truck Respawner,Zufälliger Feuerwehrauto Respawner
+SemiTruckModularRandomRespawner,blocks,block,Random Semi Truck - Modular Front Respawner,Zufälliger Sattelzug Respawner
+SemiTruckRandomRespawner,blocks,block,Random Semi Truck Respawner,Zufälliger Sattelzug Respawner
+SUVs3WideRandomRespawner,blocks,block,Random SUV Respawner,Zufälliger SUV Respawner
+SUVsRandomRespawner,blocks,block,Random SUV Respawner,Zufälliger SUV Respawner
+minivans3WideRandomRespawner,blocks,block,Random Minivan Respawner,Zufälliger Minivan Respawner
+minivansRandomRespawner,blocks,block,Random Minivan Respawner,Zufälliger Minivan Respawner

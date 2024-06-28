@@ -1,0 +1,789 @@
+<!--
+Sam's Car and Truck Respawner
+v20.0.0
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+    <!-- SJ: Set final stage of car wreck to downgrade to respawner block -->
+    <insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2Master']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="carsRandomRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='cntPickupTruck01White']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="carsRandomRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='burntSedan01']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="carsRandomRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='cntSedan3Wide01White']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="cars3WideRandomRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='burntSedan3Wide01']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="cars3WideRandomRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='cntPickupTruck3Wide01White']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="cars3WideRandomRespawner"/>
+    </insertAfter>
+    <insertAfter xpath="/blocks/block[@name='cntBusSchool']/drop[@event='Destroy']">
+        <property name="DowngradeBlock" value="busRandomRespawner"/>
+    </insertAfter>
+    <append xpath="/blocks/block[@name='cntBusSchoolShort']">
+        <property name="DowngradeBlock" value="busShortRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntAmbulanceTruck01']">
+        <property name="DowngradeBlock" value="serviceTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntServiceTruckMoPower']">
+        <property name="DowngradeBlock" value="serviceTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntServiceTruckWorkingStiffTools']">
+        <property name="DowngradeBlock" value="serviceTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntArmyTruckOpen']">
+        <property name="DowngradeBlock" value="armyTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntArmyTruckClosed']">
+        <property name="DowngradeBlock" value="armyTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntFarmTruckOpen']">
+        <property name="DowngradeBlock" value="farmTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntFarmTruckClosed']">
+        <property name="DowngradeBlock" value="farmTrucksRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='tractorWhite']">
+        <property name="DowngradeBlock" value="tractorsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='tractorRed']">
+        <property name="DowngradeBlock" value="tractorsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='tractorGreen']">
+        <property name="DowngradeBlock" value="tractorsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='tractorBlue']">
+        <property name="DowngradeBlock" value="tractorsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='excavatorWhite']">
+        <property name="DowngradeBlock" value="excavatorsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='excavatorClawWhite']">
+        <property name="DowngradeBlock" value="excavatorClawsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='backhoeWhite']">
+        <property name="DowngradeBlock" value="backhoesRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntMinivan01White']">
+        <property name="DowngradeBlock" value="minivansRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntMinivan3Wide01White']">
+        <property name="DowngradeBlock" value="minivans3WideRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntSUV01White']">
+        <property name="DowngradeBlock" value="SUVsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntSUV3Wide01White']">
+        <property name="DowngradeBlock" value="SUVs3WideRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntSemiTruck01White']">
+        <property name="DowngradeBlock" value="SemiTruckRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntSemiTruck01ModularFrontWhite']">
+        <property name="DowngradeBlock" value="SemiTruckModularRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntFireTruck01White']">
+        <property name="DowngradeBlock" value="FireTruckRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntPoliceCar01AlarmUnlocked']">
+        <property name="DowngradeBlock" value="policeCarRandomRespawner"/>
+    </append>
+
+    <!-- SJ: Set busses and trucks to downgrade to respawners -->
+
+    <!-- SJ: Helper blocks (car and army truck already exist) and respawner blocks -->
+
+    <insertAfter xpath="/blocks/block[@name='carsRandomHelper']">
+        <block name="busRandomHelper">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntBusShuttle"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="garbage"/>
+            <property name="IsReplaceRandom" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Model" value="@:Entities/Vehicles/bus_shuttlePrefab.prefab"/>
+            <property name="Place" value="TowardsPlacer"/>
+            <property name="ModelOffset" value="-.5,0,-.5"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="ShowModelOnFall" value="false"/>
+            <drop event="Destroy" count="0"/>
+            <property name="BigDecorationRadius" value="5"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <!-- <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> -->
+            <property name="PlacementDistance" value="15"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+            <property name="DisplayInfo" value="Name"/>
+        </block>
+
+        <block name="serviceTrucksRandomHelper">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="cntBusShuttle"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="garbage"/>
+            <property name="IsReplaceRandom" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Model" value="@:Entities/Vehicles/Truck/serviceTruckMoPowerPrefab.prefab"/>
+            <property name="Place" value="TowardsPlacer"/>
+            <property name="ModelOffset" value="-.5,0,-.5"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="ShowModelOnFall" value="false"/>
+            <drop event="Destroy" count="0"/>
+            <property name="BigDecorationRadius" value="5"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <!-- <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> -->
+            <property name="PlacementDistance" value="15"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+            <property name="DisplayInfo" value="Name"/>
+        </block>
+
+        <block name="tractorsRandomHelper">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="tractorWhite"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="garbage"/>
+            <property name="IsReplaceRandom" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Model" value="@:Entities/Vehicles/Tractor/tractorPrefab.prefab"/>
+            <property name="Place" value="TowardsPlacer"/>
+            <property name="ModelOffset" value="-.5,0,-.5"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="ShowModelOnFall" value="false"/>
+            <drop event="Destroy" count="0"/>
+            <property name="BigDecorationRadius" value="5"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <!-- <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> -->
+            <property name="PlacementDistance" value="15"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+            <property name="DisplayInfo" value="Name"/>
+        </block>
+
+        <block name="excavatorsRandomHelper">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="excavatorWhite"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="garbage"/>
+            <property name="IsReplaceRandom" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Model" value="@:Entities/Vehicles/Excavator/excavatorPrefab.prefab"/>
+            <property name="Place" value="TowardsPlacer"/>
+            <property name="ModelOffset" value="-.5,0,-.5"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="ShowModelOnFall" value="false"/>
+            <drop event="Destroy" count="0"/>
+            <property name="BigDecorationRadius" value="5"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <!-- <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> -->
+            <property name="PlacementDistance" value="15"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+            <property name="DisplayInfo" value="Name"/>
+        </block>
+
+        <block name="excavatorClawsRandomHelper">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="excavatorClawWhite"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="garbage"/>
+            <property name="IsReplaceRandom" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Model" value="@:Entities/Vehicles/ExcavatorClaw/excavatorClawPrefab.prefab"/>
+            <property name="Place" value="TowardsPlacer"/>
+            <property name="ModelOffset" value="-.5,0,-.5"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="ShowModelOnFall" value="false"/>
+            <drop event="Destroy" count="0"/>
+            <property name="BigDecorationRadius" value="5"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <!-- <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> -->
+            <property name="PlacementDistance" value="15"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+            <property name="DisplayInfo" value="Name"/>
+        </block>
+
+        <block name="backhoesRandomHelper">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="backhoeWhite"/>
+            <property name="CustomIconTint" value="ff8080"/>
+            <property name="ItemTypeIcon" value="explosion"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="garbage"/>
+            <property name="IsReplaceRandom" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Model" value="@:Entities/Vehicles/BackHoe/backhoePrefab.prefab"/>
+            <property name="Place" value="TowardsPlacer"/>
+            <property name="ModelOffset" value="-.5,0,-.5"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="ShowModelOnFall" value="false"/>
+            <drop event="Destroy" count="0"/>
+            <property name="BigDecorationRadius" value="5"/>
+            <property name="CanDecorateOnSlopes" value="false"/>
+            <!-- <property name="RandomTintColor1" value="0,255,0" param1="car03_white"/> -->
+            <property name="PlacementDistance" value="15"/>
+            <property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+            <property name="DisplayInfo" value="Name"/>
+        </block>
+
+        <block name="carsRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="carsRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="cars3WideRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cars3WideRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="armyTrucksRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntArmyTruckRandomLootHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="serviceTrucksRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="serviceTrucksRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block>
+
+        <block name="busRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="busRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block>  
+
+        <block name="busShortRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntBusSchoolShort"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block>  
+
+        <block name="farmTrucksRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntFarmTruckRandomLootHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="tractorsRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="tractorsRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="excavatorsRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="excavatorsRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="excavatorClawsRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="excavatorClawsRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="backhoesRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="backhoesRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="minivansRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntMinivan01RandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+        
+        <block name="minivans3WideRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntMinivan3Wide01RandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="SUVsRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntSUV01RandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="SUVs3WideRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntSUV3Wide01RandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="SemiTruckRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntSemiTruck01RandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+        <block name="SemiTruckModularRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntSemiTruck01ModularFrontRandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="FireTruckRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntFireTruck01RandomHelper"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+        <block name="policeCarRandomRespawner">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="DescriptionKey" value="plantsBlockGroupDesc"/>
+            <property name="CustomIcon" value="treeSnowyDeadBush"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.Next" value="cntPoliceCar01"/>
+            <property name="PlantGrowing.GrowthRate" value="180"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <property name="PlantGrowing.LightLevelGrow" value="8"/>
+            <property name="PlantGrowing.LightLevelStay" value="0"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="BillboardPlant"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="351"/>
+            <property name="MaxDamage" value="300"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="HarvestOverdamage" value="false"/>
+            <drop event="Harvest" name="resourceWood" count="1" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="resourceWood" count="0" prob="1" stick_chance="0"/>
+            <property name="FilterTags" value="MC_outdoor,SC_shrubbery"/>
+        </block> 
+
+    </insertAfter>
+</configs>

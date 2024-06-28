@@ -1,0 +1,45 @@
+<!--
+Sam's Storage Stuff
+v20.0.0
+by saminal
+
+loot.xml
+-->
+
+<configs>
+    <append xpath="/lootcontainers">
+
+        <!-- SJ: Custom loot containers with bigger size but appropriate sounds -->
+
+        <!-- Bookcase, Desk -->
+        <lootcontainer name="playerBookcase" count="0" size="8,9" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="0"/>
+        </lootcontainer>
+        
+        <!-- Fridge -->
+        <lootcontainer name="playerFridge" count="0" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="0"/>
+        </lootcontainer>
+        
+        <!-- Pillcase and Cupboards -->
+        <lootcontainer name="playerCupboard" count="0" size="8,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="0"/>
+        </lootcontainer>
+
+        <lootcontainer name="playerMetalDesk" count="1" size="8,9" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate">
+            <item name="cobweb" count="0"/>
+        </lootcontainer>
+
+        <lootcontainer name="playerLockers" count="1" size="8,9" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" loot_quality_template="qualBaseTemplate">
+	        <item name="cobweb" count="0"/>
+        </lootcontainer>
+        
+        <lootcontainer name="playerAmmoDisplay" count="1" size="8,9" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+	        <item name="cobweb" count="0"/>
+        </lootcontainer>   
+        <!-- Vent -->
+        <!-- <lootcontainer id="213" name="playerVent" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+        </lootcontainer> -->
+
+    </append>
+</configs>

@@ -1,0 +1,61 @@
+<!--
+Sam's Car and Truck Respawner
+v20.0.0
+by saminal
+
+blockplaceholders.xml
+-->
+
+<configs>
+    <!-- SJ: Add random respawners for busses and service trucks -->
+    <insertAfter xpath="/blockplaceholders/placeholder[@name='cntCar03SedanDamage2RandomHelper']">
+        <placeholder name="busRandomHelper">
+            <block name="cntBusSchool" prob=".3"/>
+            <block name="cntBusShuttle" prob=".3"/>
+            <block name="cntBusCity" prob=".3"/>
+        </placeholder>
+
+        <placeholder name="serviceTrucksRandomHelper">
+            <block name="cntAmbulanceTruck01" prob=".3"/>
+            <block name="cntServiceTruckMoPower" prob=".3"/>
+            <block name="cntServiceTruckWorkingStiffTools" prob=".3"/>
+        </placeholder>
+
+        <placeholder name="tractorsRandomHelper">
+            <block name="tractorWhite" prob=".3"/>
+            <block name="tractorRed" prob=".3"/>
+            <block name="tractorGreen" prob=".3"/>
+            <block name="tractorBlue" prob=".3"/>
+        </placeholder>
+
+        <placeholder name="excavatorsRandomHelper">
+            <block name="excavatorWhite" prob=".14"/>
+            <block name="excavatorRed" prob=".14"/>
+            <block name="excavatorOrange" prob=".14"/>
+            <block name="excavatorYellow" prob=".14"/>
+            <block name="excavatorGreen" prob=".14"/>
+            <block name="excavatorBlue" prob=".14"/>
+            <block name="excavatorGrey" prob=".14"/>
+        </placeholder>
+
+        <placeholder name="excavatorClawsRandomHelper">
+            <block name="excavatorClawWhite" prob=".14"/>
+            <block name="excavatorClawRed" prob=".14"/>
+            <block name="excavatorClawOrange" prob=".14"/>
+            <block name="excavatorClawYellow" prob=".14"/>
+            <block name="excavatorClawGreen" prob=".14"/>
+            <block name="excavatorClawBlue" prob=".14"/>
+            <block name="excavatorClawGrey" prob=".14"/>
+        </placeholder>
+
+        <placeholder name="backhoesRandomHelper">
+            <block name="backhoeWhite" prob=".14"/>
+            <block name="backhoeRed" prob=".14"/>
+            <block name="backhoeOrange" prob=".14"/>
+            <block name="backhoeYellow" prob=".14"/>
+            <block name="backhoeGreen" prob=".14"/>
+            <block name="backhoeBlue" prob=".14"/>
+            <block name="backhoeGrey" prob=".14"/>
+        </placeholder>
+    </insertAfter>
+</configs>

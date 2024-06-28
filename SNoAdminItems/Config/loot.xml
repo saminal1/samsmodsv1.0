@@ -1,0 +1,31 @@
+<!--
+Sam's No Admin Items
+v21.0.0
+by saminal
+
+loot.xml
+-->
+
+<configs>
+    <!-- SJ: 
+	gunHandgunPistolAdmin
+	gunToolDiggerAdmin
+	meleeToolHammerOfGodAdmin
+	pimpMiningHelmetAdmin
+	toughGuyShirtAdmin
+	upgradeResourcesPackAdmin
+	craftingResourcesPackAdmin
+    -->
+    <remove xpath="//item[contains(@name,'Admin')]" />
+
+    <!-- SJ: 
+    Loadout Tier 1
+    Loadout Tier 2
+    Loadout Tier 3
+    Loadout Tier 4
+    Loadout Tier 5
+    Loadout Tier 6
+    -->
+    <remove xpath="//item[starts-with(@name,'tier')]" />
+
+</configs>

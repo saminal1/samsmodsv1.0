@@ -1,0 +1,12 @@
+<!--
+Sam's No Admin Items
+v21.0.0
+by saminal
+
+item_modifiers.xml
+-->
+
+<configs>
+    <!-- SJ: Just this one thing - you'd think there'd be more -->
+    <remove xpath="/item_modifiers/item_modifier[contains(@name,'Admin')]" />
+</configs>

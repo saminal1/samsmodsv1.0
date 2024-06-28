@@ -1,0 +1,120 @@
+Key,File,Type,UsedInMainMenu,english
+foodChiliDog,items,Food,,Runnings Snag
+foodChiliDogDesc,items,Food,,Gotta love a snag in bread. Don't slip on the onions!
+foodChiliDogSchematic,items,Food,,Runnings Snag Recipe
+drinkJarBeer,items,Food,,Victory Bitter
+drinkJarBeerDesc,items,Food,,"A hard earned thirst needs a big cold beer, but unfortunately the only available beer is Vic, Victory Bitter.\n\n300% Fist Melee Damage\n50% Stamina Gain\nGain stamina, bravado and stun immunity all in one bottle."
+drinkJarBeerSchematic,items,Food,,Victory Bitter Recipe
+drinkJarPureMineralWater,items,Food,,Mount Cranklin
+drinkJarPureMineralWaterDesc,items,Food,,Pure Mount Cranklin mineral water is good for your digestion and hydrates you for days!\nExertion will not make you hungry and thirsty as quickly.
+vehicle4x4TruckAccessories,vehicles,item,,4x4 Great Wall Truck Accessories
+vehicle4x4TruckAccessoriesSchematic,vehicles,item,,4x4 Great Wall Truck Accessories Schematic
+vehicle4x4TruckChassis,vehicles,item,,4x4 Great Wall Truck Chassis
+vehicle4x4TruckChassisSchematic,vehicles,item,,4x4 Great Wall Truck Chassis Schematic
+vehicle4x4TruckPlaceable,vehicles,item,,4x4 Great Wall Truck
+vehicle4x4Truck,vehicles,vehicle,,4x4 Great Wall Truck
+sleeperVultureAnimal,blocks,SleeperSpawn,,Sleeper Magpie (zombie)
+animalZombieVulture,entityclasses,Entity,,Zombie Magpie
+gunHandgunT3DesertVulture,items,Gun,,.44 Desert Magpie
+gunHandgunT3DesertVultureSchematic,items,Gun,,Desert Magpie Schematic
+perkHuntingJournalVulturesDesc,progression,perk  book,,Do 10% more damage to magpies.
+perkHuntingJournalVulturesLongDesc,progression,perk  book,,Magpies: Magpies are typically encountered in the desert and are attracted to wounded or dying prey. Do 10% more damage to magpies.
+foodChickenParm,items,Food,,Chicken Parmigiana
+foodChickenParmDesc,items,Food,,"A pub staple, from a time way back when pubs didn't have zombie bears in them."
+foodChickenParmSchematic,items,Food,,Chicken Parmigiana Recipe
+foodChickenCornSoup,items,Food,,Chicken and Corn Soup
+foodChickenCornSoupDesc,items,Food,,"It's got salt, it's got sweet, it's got umami, it's got bits of weird gristle.."
+foodChickenCornSoupSchematic,items,Food,,Chicken and Corn Soup Recipe
+drinkJarBeerWRDA,items,Food,,White Rabbit Dark Ale
+drinkJarBeerWRDADesc,items,Food,,"This dark ale has a great intensity with sweet tones, with medium hops and caramel and toffee notes, and a flavour that lingers for a considerable time. And it's not VB."
+drinkJarBeerWRDASchematic,items,Food,,White Rabbit Dark Ale Recipe
+cntCoolerClosed,blocks,Container,,Esky
+cntCoolerOpen,blocks,Container,,Esky (Open)
+cntCoolerRandomLootHelper,blocks,Container,,= Esky = Random Helper
+cntCoolerRandomLootHelperDesc,blocks,Container,,Will randomly spawn (65%) an open and (35%) a closed and lootable esky.
+perkHuntingJournalCoyotesDesc,progression,perk  book,,Do 10% more damage against dingoes.
+perkHuntingJournalCoyotesLongDesc,progression,perk  book,,Dingoes: These desert dwelling scavengers can be vicious when in packs. Do 10% more damage against dingoes.
+perkAnimalTrackerRank2LongDesc,progression,perk Per,,Your hawk like senses can detect deer and boars as well as sneaky predators like wolves or dingoes.
+animalCoyote,entityclasses,Entity,,Dingo
+animalSnake,entityclasses,Entity,,Snek
+foodShamSandwichFresh,items,Food,,Fresh Sham Sandwich
+foodShamSandwichFreshDesc,items,Food,,"It ain't much, but with a freshly opened can and some homemade bread, it's better than a poke in the eye with a sharp stick. Or dysentery."
+foodLambRoast,items,Food,,Mega Lamb Roast
+foodLambRoastDesc,items,Food,,It'll put hairs on your chest. It'll put hairs on your tongue. It'll probably put hairs on your hairs.
+foodLambRoastSchematic,items,Food,,Mega Lamb Roast Recipe
+TwitchAction_SpawnVulture,twitch,Actions,,Magpie
+TwitchAction_SpawnVultureCommand,twitch,Actions,,#spawn_magpie
+TwitchAction_SpawnVultureDesc,twitch,Actions,,Spawns a single magpie.
+TwitchAction_SpawnVultureRad,twitch,Actions,,Radiated Magpie
+TwitchAction_SpawnVultureRadCommand,twitch,Actions,,#spawn_radmagpie
+TwitchAction_SpawnVultureRadDesc,twitch,Actions,,Spawns a single Radiated magpie.
+terrDirtFertile,blocks,Terrain,,Fertile Soil
+terrDirtFertileDesc,blocks,Terrain,,With this soil blend you can plant crops without requiring a farm plot block.
+abandonedPickupTruck01Blue,blocks,block,,Blue Abandoned Ute
+abandonedPickupTruck01Brown,blocks,block,,Brown Abandoned Ute
+abandonedPickupTruck01DoorBlue,blocks,block,,Blue Abandoned Ute Door
+abandonedPickupTruck01DoorBrown,blocks,block,,Brown Abandoned Ute Door
+abandonedPickupTruck01DoorGreen,blocks,block,,Green Abandoned Ute Door
+abandonedPickupTruck01DoorGrey,blocks,block,,Grey Abandoned Ute Door
+abandonedPickupTruck01DoorOrange,blocks,block,,Orange Abandoned Ute Door
+abandonedPickupTruck01DoorPink,blocks,block,,Pink Abandoned Ute Door
+abandonedPickupTruck01DoorPurple,blocks,block,,Purple Abandoned Ute Door
+abandonedPickupTruck01DoorRandomHelper,blocks,block,,= Abandoned Ute Door = Random Helper
+abandonedPickupTruck01DoorRed,blocks,block,,Red Abandoned Ute Door
+abandonedPickupTruck01DoorWhite,blocks,block,,White Abandoned Ute Door
+abandonedPickupTruck01DoorYellow,blocks,block,,Yellow Abandoned Ute Door
+abandonedPickupTruck01Green,blocks,block,,Green Abandoned Ute
+abandonedPickupTruck01Grey,blocks,block,,Grey Abandoned Ute
+abandonedPickupTruck01Orange,blocks,block,,Orange Abandoned Ute
+abandonedPickupTruck01Pink,blocks,block,,Pink Abandoned Ute
+abandonedPickupTruck01Purple,blocks,block,,Purple Abandoned Ute
+abandonedPickupTruck01RandomHelper,blocks,block,,= Abandoned Ute = Random Helper
+abandonedPickupTruck01Red,blocks,block,,Red Abandoned Ute
+abandonedPickupTruck01White,blocks,block,,White Abandoned Ute
+abandonedPickupTruck01Yellow,blocks,block,,Yellow Abandoned Ute
+abandonedPickupTruck3Wide01Blue,blocks,block,,Blue Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01Brown,blocks,block,,Brown Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01DoorBlue,blocks,block,,Blue Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorBrown,blocks,block,,Brown Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorGreen,blocks,block,,Green Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorGrey,blocks,block,,Grey Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorOrange,blocks,block,,Orange Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorPink,blocks,block,,Pink Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorPurple,blocks,block,,Purple Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorRandomHelper,blocks,block,,= Abandoned Ute 3 Wide Door = Random Helper
+abandonedPickupTruck3Wide01DoorRed,blocks,block,,Red Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorWhite,blocks,block,,White Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01DoorYellow,blocks,block,,Yellow Abandoned Ute 3 Wide Door
+abandonedPickupTruck3Wide01Green,blocks,block,,Green Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01Grey,blocks,block,,Grey Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01Orange,blocks,block,,Orange Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01Pink,blocks,block,,Pink Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01Purple,blocks,block,,Purple Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01RandomHelper,blocks,block,,= Abandoned Ute 3 Wide = Random Helper
+abandonedPickupTruck3Wide01Red,blocks,block,,Red Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01White,blocks,block,,White Abandoned Ute 3 Wide
+abandonedPickupTruck3Wide01Yellow,blocks,block,,Yellow Abandoned Ute 3 Wide
+cntBirdnestEmpty,blocks,block,,Birds Nest
+cntPickupTruck01AirRandomHelper,blocks,block,,= Ute/Air = Random Helper
+cntPickupTruck01Blue,blocks,block,,Blue Ute
+cntPickupTruck01Brown,blocks,block,,Brown Ute
+cntPickupTruck01Green,blocks,block,,Green Ute
+cntPickupTruck01Grey,blocks,block,,Grey Ute
+cntPickupTruck01Orange,blocks,block,,Orange Ute
+cntPickupTruck01Pink,blocks,block,,Pink Ute
+cntPickupTruck01Purple,blocks,block,,Purple Ute
+cntPickupTruck01RandomHelper,blocks,block,,= Ute = Random Helper
+cntPickupTruck01Red,blocks,block,,Red Ute
+cntPickupTruck01White,blocks,block,,White Ute
+cntPickupTruck01Yellow,blocks,block,,Yellow Ute
+cntPickupTruck3Wide01Blue,blocks,block,,Blue Ute
+cntPickupTruck3Wide01Brown,blocks,block,,Brown Ute
+cntPickupTruck3Wide01Green,blocks,block,,Green Ute
+cntPickupTruck3Wide01Grey,blocks,block,,Grey Ute
+cntPickupTruck3Wide01Orange,blocks,block,,Orange Ute
+cntPickupTruck3Wide01Pink,blocks,block,,Pink Ute
+cntPickupTruck3Wide01Purple,blocks,block,,Purple Ute
+cntPickupTruck3Wide01RandomHelper,blocks,block,,= Ute 3 Wide = Random Helper
+cntPickupTruck3Wide01Red,blocks,block,,Red Ute
+cntPickupTruck3Wide01White,blocks,block,,White Ute
+cntPickupTruck3Wide01Yellow,blocks,block,,Yellow Ute

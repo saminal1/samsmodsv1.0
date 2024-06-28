@@ -1,0 +1,23 @@
+<!--
+Sam's Deco Stuff
+v21.0.0
+by saminal
+
+loot.xml
+-->
+
+<configs>
+    <append xpath="/lootcontainers">
+
+        <!-- SJ: Custom loot containers that do not destroy on close -->
+
+        <lootcontainer name="decoPurse" count="1,2" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5">
+            <item name="cobweb" count="0"/>
+        </lootcontainer>
+        
+        <lootcontainer name="decoDuffle" count="1" size="6,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1.5">
+	        <item name="cobweb" count="0"/>
+        </lootcontainer>
+
+    </append>
+</configs>

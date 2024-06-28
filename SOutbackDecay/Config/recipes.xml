@@ -1,0 +1,62 @@
+<!--
+Sam's Outback Decay
+v21.0.0
+by saminal
+
+recipes.xml
+-->
+
+<configs>
+    <append xpath="/recipes">
+        <recipe name="foodChickenParm" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+        	<ingredient name="foodCanChicken" count="1"/>
+            <ingredient name="foodCornMeal" count="2"/>
+            <ingredient name="foodCanPasta" count="1"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+            
+        <recipe name="foodChickenCornSoup" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+            <ingredient name="foodCanChicken" count="1"/>
+            <ingredient name="foodCropCorn" count="2"/>
+            <ingredient name="foodCanMiso" count="1"/>
+        </recipe>
+
+        <recipe name="foodShamSandwichFresh" count="1" craft_area="campfire" tags="perkMasterChef">
+            <ingredient name="foodCanSham" count="1"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+            <ingredient name="foodPumpkinBread" count="1"/>
+        </recipe>
+
+        <recipe name="foodShamSandwichFresh" count="1" craft_area="workbench" tags="perkMasterChef">
+            <ingredient name="foodCanSham" count="1"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+            <ingredient name="foodPumpkinBread" count="1"/>
+        </recipe>
+
+        <recipe name="foodLambRoast" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+            <ingredient name="foodCanLamb" count="1"/>
+            <ingredient name="foodCropGraceCorn" count="2"/>
+            <ingredient name="foodCropPotato" count="2"/>
+            <ingredient name="resourceAnimalFat" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarBeerWRDA" count="1" craft_area="chemistryStation" tags="perkMasterChef,learnable,chemStationCrafting">
+            <ingredient name="resourceCropHopsFlower" count="5"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+            <ingredient name="foodHoney" count="1"/>
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
+            </effect_group>
+        </recipe>
+
+        <recipe name="terrDirtFertile" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
+            <ingredient name="foodRottingFlesh" count="10"/>
+            <ingredient name="resourcePotassiumNitratePowder" count="25"/>
+            <ingredient name="resourceClayLump" count="100"/>
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
+            </effect_group>
+        </recipe>
+
+    </append>
+</configs>

@@ -1,0 +1,141 @@
+<!--
+Sam's No Admin Items
+v21.0.0
+by saminal
+
+items.xml
+-->
+
+<configs>
+    <!-- SJ: 
+    adminPerkBook
+    adminSkillMagazine
+    adminModSchematic
+    -->
+    <remove xpath="/items/item[starts-with(@name,'admin')]" />
+    
+    <!-- SJ: 
+    giveXP_T1_admin
+    giveXP_T2_admin
+    giveXP_T3_admin
+    giveXP_T4_admin
+    giveXP_T5_admin
+    giveXP_T6_admin
+    -->
+    <remove xpath="/items/item[starts-with(@name,'giveXP')]" />
+
+    <!-- SJ: 
+    armorPlotAdmin
+    coolLootShadesAdmin
+    coolLootShadesAdmin200
+    drinkJarFullRespecAdmin
+    drugBluePillAdmin
+    drugRedPillAdmin
+    foolsCapAdmin
+    gunHandgunPistolAdmin
+    gunToolDiggerAdmin
+    meleeToolHammerOfGodAdmin
+    meleeToolPaintToolAdmin
+    meleeToolSalvageWrenchAdmin
+    noteTestersDelightAdmin
+    noteTestersElectricityAdmin
+    pimpMiningHelmetAdmin
+    rocketBootsAdmin
+    toolTerrainModelerAdmin
+    toughGuyShirtAdmin
+    ringOfFireAdmin
+    craftingShadesAdmin
+    upgradeResourcesPackAdmin
+    craftingResourcesPackAdmin
+    workstationsPackAdmin
+    levelDesignToolsAdmin
+    thrownGrenadeNukeAdmin
+    -->
+    <remove xpath="/items/item[contains(@name,'Admin')]" />
+
+    <!-- SJ: 
+    LoadoutTier1Melee
+    LoadoutTier1Bow
+    LoadoutTier1Pistol
+    LoadoutTier1Shotgun
+    LoadoutTier1Rifle
+    LoadoutTier1MachineGun
+    LoadoutTier1Ranged
+    LoadoutTier2Melee
+    LoadoutTier2Bow01
+    LoadoutTier2Bow02
+    LoadoutTier2Pistol
+    LoadoutTier2Shotgun
+    LoadoutTier2Rifle
+    LoadoutTier2MachineGun
+    LoadoutTier2Ranged
+    LoadoutTier2ArmorLight
+    LoadoutTier2ArmorHeavy
+    LoadoutTier2Armor
+    LoadoutTier3Melee
+    LoadoutTier3Bow
+    LoadoutTier3Pistol01
+    LoadoutTier3Pistol02
+    LoadoutTier3Shotgun
+    LoadoutTier3Rifle
+    LoadoutTier3MachineGun01
+    LoadoutTier3MachineGun02
+    LoadoutTier3Ranged
+    LoadoutTier3ArmorLight
+    LoadoutTier3ArmorHeavy
+    LoadoutTier3Armor
+    LoadoutTier4Melee
+    LoadoutTier4Bow
+    LoadoutTier4Pistol01
+    LoadoutTier4Pistol02
+    LoadoutTier4Shotgun
+    LoadoutTier4Rifle01
+    LoadoutTier4Rifle02
+    LoadoutTier4MachineGun01
+    LoadoutTier4MachineGun02
+    LoadoutTier4Ranged
+    LoadoutTier4ArmorLight
+    LoadoutTier4ArmorHeavy
+    LoadoutTier4Armor
+    LoadoutTier5Melee
+    LoadoutTier5Bow
+    LoadoutTier5Pistol01
+    LoadoutTier5Pistol02
+    LoadoutTier5Shotgun01
+    LoadoutTier5Shotgun02
+    LoadoutTier5Rifle01
+    LoadoutTier5Rifle02
+    LoadoutTier5MachineGun01
+    LoadoutTier5MachineGun02
+    LoadoutTier5Ranged
+    LoadoutTier5ArmorLight
+    LoadoutTier5ArmorHeavy
+    LoadoutTier5Armor
+    LoadoutTier6Melee
+    LoadoutTier6MeleeMods
+    LoadoutTier6RangeMods
+    LoadoutTier6Throwables01
+    LoadoutTier6Pistol01
+    LoadoutTier6Pistol02
+    LoadoutTier6Shotgun02
+    LoadoutTier6MachineGun01
+    LoadoutTier6MachineGun02
+    LoadoutTier6JunkTurret
+    LoadoutTier6Ranged
+    LoadoutTier6ArmorLight
+    LoadoutTier6ArmorHeavy
+    LoadoutTier6Armor
+    Loadout Tier 1
+    Loadout Tier 2
+    Loadout Tier 3
+    Loadout Tier 4
+    Loadout Tier 5
+    Loadout Tier 6
+    -->
+    <remove xpath="/items/item[starts-with(@name,'tier')]" />
+
+    <!-- SJ: only this one thing :/ -->
+    <remove xpath="/items/item[@name='meleeToolBlockReplaceTool']" />
+
+
+</configs>

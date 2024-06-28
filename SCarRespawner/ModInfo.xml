@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="Sams_Car_and_Truck_Respawner" />
+		<DisplayName value="Sam's Car and Truck Respawner" />
+		<Description value="Allows cars and trucks to respawn after a delay" />
+		<Author value="Saminal" />
+		<Version value="v1.0.1" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+</xml>

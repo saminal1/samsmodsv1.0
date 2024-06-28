@@ -1,0 +1,56 @@
+Key,File,Type,UsedInMainMenu,english
+cntBookcasePlayer,blocks,Furniture,,Bookcase (Storage)
+playerStorageGroupDesc,blocks,Furniture,,Furniture items usually have small storage values and cannot be locked. These storage items can be secured and have full chest size storage. 
+cntBookcasePlayerInsecure,blocks,Furniture,,Bookcase (Storage) Insecure
+cntRetroFridgePlayer,blocks,Furniture,,Retro Fridge (Storage)
+cntRetroFridgePlayerInsecure,blocks,Furniture,,Retro Fridge (Storage) Insecure
+cntFridgeStainlessSteelPlayer,blocks,Furniture,,Stainless Steel Fridge (Storage)
+cntFridgeStainlessSteelPlayerInsecure,blocks,Furniture,,Stainless Steel Fridge (Storage) Insecure
+cntPillCasePlayer,blocks,Furniture,,Pill Case (Storage)
+cntPillCasePlayerInsecure,blocks,Furniture,,Pill Case (Storage) Insecure
+cntDeskWoodPlayer,blocks,Furniture,,Wooden Desk (Storage)
+cntDeskWoodPlayerInsecure,blocks,Furniture,,Wooden Desk (Storage) Insecure
+cntCabinetBottomPlayer,blocks,Furniture,,Cupboard (Storage)
+cntCabinetBottomPlayerInsecure,blocks,Furniture,,Cupboard (Storage) Insecure
+heatVentPlayer,blocks,Furniture,,Top Secret Vent (Storage)
+heatVentPlayerInsecure,blocks,Furniture,,Top Secret Vent (Storage) Insecure
+cntLootChestHero,blocks,Container,,Reinforced Storage Chest
+cntCabinetBottomPlayer,blocks,Furniture,,Cabinet (Storage)
+cntCabinetBottomPlayerInsecure,blocks,Furniture,,Cabinet (Storage) Insecure
+cntCupboardCabinetRedTopPlayer,blocks,Furniture,,Cupboard (Storage)
+cntCupboardCabinetRedTopPlayerInsecure,blocks,Furniture,,Cupboard (Storage) Insecure
+cntCupboardCornerCNRRedPlayer,blocks,Furniture,,Cupboard (Storage)
+cntCupboardCornerCNRRedPlayerInsecure,blocks,Furniture,,Cupboard (Storage) Insecure
+cntCupboardCabinetFullRedTopPlayer,blocks,Furniture,,Cupboard (Storage)
+cntCupboardCabinetFullRedTopPlayerInsecure,blocks,Furniture,,Cupboard (Storage) Insecure
+cntCabinetOldBottomPlayer,blocks,Furniture,,Old Cabinet (Storage)
+cntCabinetOldBottomPlayerInsecure,blocks,Furniture,,Old Cabinet (Storage) Insecure
+cntCabinetOldSinkPlayer,blocks,Furniture,,Old Cabinet with Sink Hole (Storage)
+cntCabinetOldSinkPlayerInsecure,blocks,Furniture,,Old Cabinet with Sink Hole (Storage) Insecure
+cntCupboardCabinetOldTopPlayer,blocks,Furniture,,Old Cupboard (Storage)
+cntCupboardCabinetOldTopPlayerInsecure,blocks,Furniture,,Old Cupboard (Storage) Insecure
+cntCupboardCornerCNROldPlayer,blocks,Furniture,,Old Cupboard (Storage)
+cntCupboardCornerCNROldPlayerInsecure,blocks,Furniture,,Old Cupboard (Storage) Insecure
+cntCupboardCabinetFullOldTopPlayer,blocks,Furniture,,Old Cupboard (Storage)
+cntCupboardCabinetFullOldTopPlayerInsecure,blocks,Furniture,,Old Cupboard (Storage) Insecure
+cntGraniteSinkPlayer,blocks,Furniture,,Cabinet with Sink Hole (Storage)
+cntGraniteSinkPlayerInsecure,blocks,Furniture,,Cabinet with Sink Hole (Storage) Insecure
+cntCabinetPlayerBlockVariantHelper,blocks,Furniture,,Cupboard and Cabinets (Storage)
+cntNightstandPlayer,blocks,Furniture,,Nightstand (Storage)
+cntNightstandPlayerInsecure,blocks,Furniture,,Nightstand (Storage) Insecure
+cntDeskMetalPlayer,blocks,Furniture,,Metal Desk (Storage)
+cntDeskMetalPlayerInsecure,blocks,Furniture,,Metal Desk (Storage) Insecure
+cntLockersShortPlayer,blocks,Furniture,,Lockers (Storage)
+cntLockersShortPlayerInsecure,blocks,Furniture,,Lockers (Storage) Insecure
+cntLockersTallPlayer,blocks,Furniture,,Tall Lockers (Storage)
+cntLockersTallPlayerInsecure,blocks,Furniture,,Tall Lockers (Storage) Insecure
+cntLockersTallDoublePlayer,blocks,Furniture,,Tall Double Lockers (Storage)
+cntLockersTallDoublePlayerInsecure,blocks,Furniture,,Tall Double Lockers (Storage) Insecure
+cntGunRackSmallMagazinesPlayer,blocks,Furniture,,Small Gun Rack (Storage)
+cntGunRackSmallMagazinesPlayerInsecure,blocks,Furniture,,Small Gun Rack (Storage) Insecure
+cntGunRackSmallArmorPlayer,blocks,Furniture,,Small Armor Rack (Storage)
+cntGunRackSmallArmorPlayerInsecure,blocks,Furniture,,Small Armor Rack (Storage) Insecure
+cntGunRackLargeGuns01Player,blocks,Furniture,,Large Gun Rack (Storage)
+cntGunRackLargeGuns01PlayerInsecure,blocks,Furniture,,Large Gun Rack (Storage) Insecure
+cntGunRackLargeGuns02Player,blocks,Furniture,,Large Gun Rack (Storage)
+cntGunRackLargeGuns02PlayerInsecure,blocks,Furniture,,Large Gun Rack (Storage) Insecure

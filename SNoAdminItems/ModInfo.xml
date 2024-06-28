@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="Sams_No_Admin_Items" />
+		<DisplayName value="Sam's No Admin Items" />
+		<Description value="Quick mod to remove several admin items that can be exploited" />
+		<Author value="Saminal" />
+		<Version value="v1.0.1" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+</xml>

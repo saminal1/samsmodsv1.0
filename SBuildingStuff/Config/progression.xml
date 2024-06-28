@@ -1,0 +1,16 @@
+<!--
+Sam's Building Stuff
+v21.0.0
+by saminal
+
+progression.xml
+-->
+
+<configs>
+
+<!-- SJ: Add the additional Powered Doors alongside the existing powered doors to the Electrician crafting skill -->
+
+    <csv xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@unlock_level='75']/unlock_entry/@item" delim="," op="add">elevatorDoorPoweredVariantHelper,commercialBulletproofSlidingDoorPowered,chainlinkFenceDoorPoweredVariantHelper,shuttersSteel01PoweredVariantHelper,trailerDoorPoweredVariantHelper</csv>
+    <csv xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='75,100']/@tags" delim="," op="add">elevatorDoorPoweredVariantHelper,commercialBulletproofSlidingDoorPowered,chainlinkFenceDoorPoweredVariantHelper,shuttersSteel01PoweredVariantHelper,trailerDoorPoweredVariantHelper</csv>
+
+</configs>
