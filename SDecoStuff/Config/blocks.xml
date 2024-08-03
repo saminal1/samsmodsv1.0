@@ -17,7 +17,7 @@ blocks.xml
 			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true"/>
-			<property name="PlaceAltBlockValue" value="wineBarrel,wineBarrelSet,wineBarrelPlain,paintingBen,paintingLorien,paintingDerek,paintingNoah,paintingDuke,paintingKen,decoClassicDogHouse,cntBookcaseEmpty,decoBookcase,emberPileDeco1,emberPileDeco2,driftwood,driftwood2,signShopColdBeer,modularFireWoodStackA,modularFireWoodStackB,modularFireWoodStackC,palletEmpty,palletEmptyStack,decoCoffinWildWestClosed,decoCoffinWildWestCracked,decoCoffinWildWestStack,decoCoffinWildWestLeaning,decoCoffinWildWestLidLeaning,shootingRangeTarget,piano,woodenBear,tableCommunion"/>
+			<property name="PlaceAltBlockValue" value="wineBarrel,wineBarrelSet,wineBarrelPlain,paintingBen,paintingLorien,paintingDerek,paintingNoah,paintingDuke,paintingKen,decoClassicDogHouse,cntBookcaseEmpty,decoBookcase,emberPileDeco1,emberPileDeco2,driftwood,driftwood2,modularFireWoodStackA,modularFireWoodStackB,modularFireWoodStackC,palletEmpty,palletEmptyStack,decoCoffinWildWestClosed,decoCoffinWildWestCracked,decoCoffinWildWestStack,decoCoffinWildWestLeaning,decoCoffinWildWestLidLeaning,shootingRangeTarget,piano,woodenBear,tableCommunion"/>
 			<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 		</block>
 

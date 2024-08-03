@@ -442,6 +442,18 @@ blocks.xml
 			<property name="TakeDelay" value="5"/>
 		</block>
 
+		<block name="signNeonColdBeerPlayer">
+			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signNeonColdBeer"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="CustomIcon" value="signNeonColdBeer"/>
+			<property name="HandleFace" value="South"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="Material" value="Mmetal_weak"/>
+			<property name="TakeDelay" value="5"/>
+		</block>
+
 		<block name="lightPlayerVariantHelper">
 			<property name="Extends" value="tableLampLight01White"/>
 			<property name="CustomIcon" value="tableLampLight01White"/>
@@ -451,7 +463,7 @@ blocks.xml
 			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="ItemTypeIcon" value="all_blocks"/>
 			<property name="SelectAlternates" value="true"/>
-			<property name="PlaceAltBlockValue" value="tableLampLightPlayer,workLightPlayer,signExitLightPlayer,ceilingFanLightPlayer,signShopOpenPlayer,deskLampLightPlayer,ceilingLight01_player,industrialLight01_player,industrialLight02_player,ceilingLight07_player,sconce1LightShadowPlayer,porchLight01Player,porchLight04BrassPlayer,ceilingLight02Player,ceilingLight02BrassPlayer,ceilingLight04Player,ceilingLight05Player,ceilingLight05BrassPlayer,recessedLightPlayer,wallLight01Player,fluorescentLightPlayer,trackLightPlayer,chandelierLightPlayer"/>
+			<property name="PlaceAltBlockValue" value="tableLampLightPlayer,workLightPlayer,signExitLightPlayer,ceilingFanLightPlayer,signShopOpenPlayer,deskLampLightPlayer,ceilingLight01_player,industrialLight01_player,industrialLight02_player,ceilingLight07_player,sconce1LightShadowPlayer,porchLight01Player,porchLight04BrassPlayer,ceilingLight02Player,ceilingLight02BrassPlayer,ceilingLight04Player,ceilingLight05Player,ceilingLight05BrassPlayer,recessedLightPlayer,wallLight01Player,fluorescentLightPlayer,trackLightPlayer,chandelierLightPlayer,signNeonColdBeerPlayer"/>
 			<property name="Group" value="Basics,Building,advBuilding"/>
 			<property name="PickupJournalEntry" value="shapeMenuTip"/>
 		</block>

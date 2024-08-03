@@ -98,6 +98,12 @@ blocks.xml
     <append xpath="/blocks/block[@name='cntPoliceCar01AlarmUnlocked']">
         <property name="DowngradeBlock" value="policeCarRandomRespawner"/>
     </append>
+        <append xpath="/blocks/block[@name='cntFrontCrumpledSedan01White']">
+        <property name="DowngradeBlock" value="carsRandomRespawner"/>
+    </append>
+    <append xpath="/blocks/block[@name='cntSedan01White']">
+        <property name="DowngradeBlock" value="carsRandomRespawner"/>
+    </append>
 
     <!-- SJ: Set busses and trucks to downgrade to respawners -->
 
