@@ -1,0 +1,28 @@
+<!--
+Sam's Outback Decay Builder Challenges
+1.0.0
+by saminal
+
+quests.xml
+-->
+
+<configs>
+    <insertAfter xpath="quests/quest[@id='quest_reward_demolition_zombie_slayer']">
+        <quest id="challengegroup_reward_builder_challenges" template="challengegroup_reward_homesteading">
+            <variable name="name" value="zombie_slayer_name_demolition"/>
+            <variable name="subtitle" value="zombie_slayer_subtitle_demolition"/>
+            <variable name="description" value="zombie_slayer_desc"/>
+            <variable name="completion" value="zombie_slayer_completion"/>
+            <!-- Challenge Rewards are localized. Update challengeKillRewardLegendary if this list is changed. -->
+            <reward type="Exp" value="10000"/>
+            <reward type="Item" id="questRewardLegendaryRifleCraftingBundle" ischosen="true" isfixed="true" value="1"/>
+            <reward type="Item" id="questRewardLegendaryShotgunCraftingBundle" ischosen="true" isfixed="true" value="1"/>
+            <reward type="Item" id="questRewardLegendaryMachineGunCraftingBundle" ischosen="true" isfixed="true" value="1"/>
+            <reward type="Item" id="questRewardLegendaryHandgunCraftingBundle" ischosen="true" isfixed="true" value="1"/>
+            <reward type="Item" id="questRewardLegendaryRoboticsCraftingBundle" ischosen="true" isfixed="true" value="1"/>
+        </quest>
+    
+
+
+    </insertAfter>
+</configs>

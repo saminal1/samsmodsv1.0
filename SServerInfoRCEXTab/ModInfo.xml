@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	
+	<xml>
+			<Name value="Sams_Server_Info_RCETAB" />
+			<DisplayName value="Sam's Server Info - RCE with Tabs" />
+			<Description value="Adds info screen to the esc menu." />
+			<Author value="saminal with help from BadPlayer" />
+			<Version value="1.0.0" />
+			<Website value="https://discord.gg/mBJwEw4kj8" />
+	</xml>

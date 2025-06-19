@@ -65,7 +65,7 @@ Add recipe to craft a working oven at the workbench
 		</recipe>
 
 		<recipe name="sinkCounterWorking" craft_time="90" count="1" tags="learnable,workbenchCrafting">
-			<ingredient name="resourceWaterFilter" count="2"/>
+			<ingredient name="toolDewFilter" count="2"/>
 			<ingredient name="resourceClayLump" count="50"/>
 			<ingredient name="resourceMetalPipe" count="4"/>
 			<ingredient name="resourceDuctTape" count="2"/>

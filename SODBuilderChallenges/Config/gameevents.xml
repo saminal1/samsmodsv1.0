@@ -1,0 +1,115 @@
+<!--
+Sam's Outback Decay Builder Challenges
+1.0.0
+by saminal
+
+gameevents.xml
+-->
+
+<configs>
+
+    <insertAfter xpath="gameevents/action_sequence[@name='demolition_zombie_slayer']">
+        <action_sequence name="challenge_group_reward_builder_challenges">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="challengegroup_reward_builder_challenges" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+
+        <action_sequence name="reward_builder_challenge_forge">
+            <property name="action_type" value="Game" />
+
+            <action class="AddQuest">
+                <property name="quest" value="reward_builder_challenge_forge" parma1="quest" />
+                <property name="notify" value="false" />
+            </action>
+        </action_sequence>
+    
+    </insertAfter>
+        
+
+
+</configs>

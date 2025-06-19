@@ -1,0 +1,24 @@
+<!--
+Sam's Outback Decay Builder Boosts
+v20.0.0
+by saminal
+
+progression.xml
+-->
+
+<configs>
+
+    <!-- SJ: Unlock Solar Bank and Cells as part of Electrical Crafting Skill  -->
+    
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@unlock_level='55']/unlock_entry/@item">,solarbank,solarCell</append>
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='55,100' and @tags='carBattery']/@tags">,solarbank,solarCell</append>
+
+    <!-- SJ: Decrease percentage reduction of CraftingTime from various perks to avoid going negative with the base boost in entityclasses.xml -->
+
+    <set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.01,-0.05</set>
+    <!-- <set xpath="progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='CraftingTime']/@value">4,2,1,0</set> -->
+    <set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='CraftingTime']/@value">-.02,-.02,-.04,-.04</set>
+    <set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @level='1,5']/@value">-0.02</set>
+    <set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @level='2,5']/@value">-0.02</set>
+ 
+</configs>

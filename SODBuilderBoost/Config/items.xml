@@ -1,0 +1,159 @@
+<!--
+Sam's Outback Decay Builder Boosts
+v19.2.1
+by saminal
+
+items.xml
+-->
+
+<configs>
+    
+    <!-- SJ: Set very low smelting time on core resources (scrap metals, stone and sand, and items which only exist to be scrapped down to metals - also car batteries as they're often only used for lead -->
+
+    <set xpath="items/item[starts-with(@name, 'resource')]/property[@name='MeltTimePerUnit']/@value">0.05</set>
+    <set xpath="items/item[@name='casinoCoin']/property[@name='MeltTimePerUnit']/@value">0.05</set>
+    
+    <append xpath="items/item[@name='resourceScrapIron']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceForgedIron']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceForgedSteel']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceScrapLead']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceClayLump']">
+        <property name="MeltTimePerUnit" value="0.1"/>
+    </append>
+    <append xpath="items/item[@name='resourceScrapIron']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceFishingWeight']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceTrophy2']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='carBattery']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+    <append xpath="items/item[@name='resourceCrushedSand']">
+        <property name="MeltTimePerUnit" value="0.05"/>
+    </append>
+
+    <remove xpath="items/item[@name='toolAnvil']"/>
+
+    <insertAfter xpath="items/item[@name='toolBellows']">
+        <item name="toolAnvil">
+            <property name="UnlockedBy" value="craftingWorkstations" />
+            <property name="Tags" value="toolAnvil,workstationSkill" />
+            <property name="HoldType" value="45" />
+            <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab" />
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+            <property name="Material" value="Msteel" />
+            <property name="Weight" value="0" />
+            <property name="Stacknumber" value="1" /> <!-- STK loot -->
+            <property name="EconomicValue" value="240" />
+            <property name="Group" value="Tools/Traps" />
+            <property name="DisplayType" value="toolAnvil" />
+            <property name="ItemTypeIcon" value="forge" />
+            <effect_group tiered="false">
+                <requirement name="!HoldingItemHasTags" tags="toolAnvil" />
+                    <passive_effect name="CraftingTime" operation="perc_add" value="-.033" />
+                    <display_value name="dCraftingTime" value=".5" />
+            </effect_group>
+        </item>
+    </insertAfter>
+
+    <insertAfter xpath="items/item[@name='modVehicleReserveFuelTankSchematic']">
+        <item name="solarbankSchematic">
+            <property name="Extends" value="schematicNoQualityMaster"/>
+            <property name="CreativeMode" value="Player"/>
+            <property name="CustomIcon" value="solarbank"/>
+            <property name="Unlocks" value="solarbank"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbank" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCell" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </insertAfter>
+
+    <append xpath="items/item[@name='solarCell']">
+        <property name="UnlockedBy" value="solarbankSchematic"/>
+    </append>
+
+    <append xpath="/items">
+        <item name="meleeToolSilverHammer">
+            <property name="Extends" value="meleeToolPickT1IronPickaxe"/>
+            <property name="Tags" value="tool,sideAttachments,repairTool,attStrength,perkMiner69r,canHaveCosmetic,noMods"/>
+            <property name="CustomIcon" value="meleeToolRepairT1ClawHammer"/>
+            <property name="CustomIconTint" value="EEEEEE"/>
+            <property name="DisplayType" value="melee"/>
+            <property name="DescriptionKey" value="meleeToolSilverHammerDesc"/>
+            <property name="HoldType" value="32"/>
+            <property name="Meshfile" value="@:Other/Items/Tools/hammerPrefab.prefab"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="EconomicValue" value="700"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Weight" value="6"/>
+            <property name="SellableToTrader" value="false"/>
+            <property class="Action0">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Sphere" value=".1"/>
+                <property name="Sound_start" value="hammer_small_swinglight"/>
+		        <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+                <property name="GrazeStart" value=".12"/>
+                <property name="GrazeEnd" value=".3"/>
+                <property name="SwingDegrees" value="45"/>
+                <property name="SwingAngle" value="135"/>
+                <property name="UseGrazingHits" value="true"/>
+            </property>
+            <property class="Action1">
+            	<property name="Class" value="DynamicMelee"/>
+                <property name="Sound_start" value="sledge_swingheavy"/>
+                <property name="Sphere" value=".15"/>
+                <property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+                <property name="UsePowerAttackAnimation" value="true"/>
+                <property name="UseGrazingHits" value="true"/>
+                <property name="IsHorizontalSwing" value="true"/>
+                <property name="GrazeStart" value=".25"/>
+                <property name="GrazeEnd" value=".32"/>
+                <property name="SwingDegrees" value="120"/>
+                <property name="SwingAngle" value="90"/>
+            </property>
+            <property name="Group" value="Tools/Traps"/>
+            <effect_group name="meleeToolSilverHammer" tiered="false">
+                <passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkMiner69r"/>
+                <passive_effect name="BlockDamage" operation="base_set" value="15" tags="perkMiner69r,miningTool"/>
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkMiner69r"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="14" tags="primary"/>
+                <passive_effect name="DegradationMax" operation="base_set" value="1500" tags="perkMiner69r"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+                <passive_effect name="MaxRange" operation="base_set" value="4" tags="perkMiner69r"/>
+                <passive_effect name="BlockRange" operation="base_set" value="4" tags="perkMiner69r"/>
+
+                <passive_effect name="ModSlots" operation="base_set" value="0"/>
+
+                <passive_effect name="PlayerExpGain" operation="perc_add" value="-.1" tags="Harvesting"/>
+
+                <passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood,earth,metal"/>
+                <passive_effect name="DamageModifier" operation="perc_set" value="500" tags="stone"/>
+
+                <passive_effect name="HarvestCount" operation="base_add" value="-.99" tags="allHarvest"/>
+                <passive_effect name="HarvestCount" operation="base_add" value="-.99" tags="allToolsHarvest"/>
+                <passive_effect name="HarvestCount" operation="base_add" value="-.99" tags="oreWoodHarvest"/>
+            </effect_group>
+
+            <effect_group name="Power Attack" tiered="false">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="52.7" tags="secondary"/>
+            </effect_group>
+        </item>
+    </append>
+</configs>

@@ -7,12 +7,12 @@ drinkJarBeerDesc,items,Food,,"A hard earned thirst needs a big cold beer, but un
 drinkJarBeerSchematic,items,Food,,Victory Bitter Recipe
 drinkJarPureMineralWater,items,Food,,Mount Cranklin
 drinkJarPureMineralWaterDesc,items,Food,,Pure Mount Cranklin mineral water is good for your digestion and hydrates you for days!\nExertion will not make you hungry and thirsty as quickly.
-vehicle4x4TruckAccessories,vehicles,item,,4x4 Great Wall Truck Accessories
-vehicle4x4TruckAccessoriesSchematic,vehicles,item,,4x4 Great Wall Truck Accessories Schematic
-vehicle4x4TruckChassis,vehicles,item,,4x4 Great Wall Truck Chassis
+vehicleTruck4x4Accessories,vehicles,item,,4x4 Great Wall Truck Accessories
+vehicleTruck4x4AccessoriesSchematic,vehicles,item,,4x4 Great Wall Truck Accessories Schematic
+vehicleTruck4x4Chassis,vehicles,item,,4x4 Great Wall Truck Chassis
 vehicle4x4TruckChassisSchematic,vehicles,item,,4x4 Great Wall Truck Chassis Schematic
-vehicle4x4TruckPlaceable,vehicles,item,,4x4 Great Wall Truck
-vehicle4x4Truck,vehicles,vehicle,,4x4 Great Wall Truck
+vehicleTruck4x4Placeable,vehicles,item,,4x4 Great Wall Truck
+vehicleTruck4x4,vehicles,vehicle,,4x4 Great Wall Truck
 sleeperVultureAnimal,blocks,SleeperSpawn,,Sleeper Magpie (zombie)
 animalZombieVulture,entityclasses,Entity,,Zombie Magpie
 gunHandgunT3DesertVulture,items,Gun,,.44 Desert Magpie

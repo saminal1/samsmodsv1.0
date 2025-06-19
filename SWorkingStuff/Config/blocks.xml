@@ -208,8 +208,17 @@ blocks.xml
 			<property name="MinConvertTime" value="600" /> <!-- 21600 Game Seconds = 6 Game Hours -->
 			<property name="MaxConvertTime" value="1200" /> <!-- 36000 Game Seconds = 10 Game Hours -->
 			<property name="ConvertToItem" value="drinkJarRiverWater" />
+			<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+			<property name="ModdedConvertSpeed" value="2"/>
+			<property name="ModdedConvertCount" value="2"/>
+			<property name="ModTransformNames" value="1,2,3"/>
+			<property name="ModTypes" value="Speed,Count,Type"/>
 			<property name="EconomicValue" value="120"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceMetalPipe" value="1"/>
+			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Harvest" name="resourceMetalPipe" count="2" tag="allHarvest"/>
 			<drop event="Harvest" name="resourceScrapBrass" count="20,50" tag="WasteTreasuresSinkHarvest"/>
@@ -233,17 +242,27 @@ blocks.xml
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Commercial/sinkCounterMountedPrefab"/>
 			<property name="WaterFlow" value="permitted"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="77"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="Path" value="solid"/>
 			<property name="StabilitySupport" value="false"/>
 			<property name="OpenSound" value="open_workbench"/>
 			<property name="CloseSound" value="close_workbench"/>
-			<property name="ConvertSound" value="bucketfill_water"/>
+			<property name="bucketfill" value="bucketfill_water"/>
 			<property name="MinConvertTime" value="600" /> <!-- 21600 Game Seconds = 6 Game Hours -->
 			<property name="MaxConvertTime" value="1200" /> <!-- 36000 Game Seconds = 10 Game Hours -->
-			<property name="ConvertToItem" value="drinkJarBoiledWater" />
+			<property name="ConvertToItem" value="drinkJarRiverWater"/>
+			<property name="ModdedConvertToItem" value="drinkJarBoiledWater"/>
+			<property name="ModdedConvertSpeed" value="2"/>
+			<property name="ModdedConvertCount" value="2"/>
+			<property name="ModTransformNames" value="1,2,3"/>
+			<property name="ModTypes" value="Speed,Count,Type"/>
 			<property name="EconomicValue" value="120"/>
 			<property name="Stacknumber" value="1"/>
+			<property name="SellableToTrader" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceMetalPipe" value="1"/>
+			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Harvest" name="resourceMetalPipe" count="2" tag="allHarvest"/>
 			<drop event="Harvest" name="resourceScrapBrass" count="20,50" tag="WasteTreasuresSinkHarvest"/>
@@ -253,7 +272,7 @@ blocks.xml
 			<property name="SortOrder1" value="B109"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-			<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing,A21_NEW"/>
+			<property name="FilterTags" value="MC_building,SC_loot,SC_plumbing"/>
 		</block>
 
 		

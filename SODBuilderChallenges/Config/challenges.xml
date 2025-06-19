@@ -1,0 +1,18 @@
+<!--
+Sam's Outback Builder Challenges
+1.0.0
+by saminal
+
+challenges.xml
+-->
+
+<configs>
+    <insertAfter xpath="challenges/challenge_category[@name='Twitch']">
+        <challenge_category name="Builder" title_key="BuilderChallengesHeader" icon="ui_game_symbol_hammer"/>
+    </insertAfter>
+
+    <insertAfter xpath="challenges/challenge_group[@name='Silly']">
+        <challenge_group category="Builder" name="BuilderQuests" title_key="challengeGroupBuilderQuests" reward_text_key="challengeRewardBuilderQuest" reward_event="challenge_group_reward_builder" link_challenges="true"/>
+
+
+</configs>

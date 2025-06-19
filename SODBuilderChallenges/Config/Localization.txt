@@ -1,0 +1,27 @@
+Key,File,Type,UsedInMainMenu,english
+BuilderChallengesHeader,challenges,Challenge Group,,Outback Decay Builder
+challengeGroupBuilderQuests,challenges,Challenge Group,,Builder Challenges
+builder_challenge_name_group,challenges,Challenge Group,,Builder Challenges
+builder_challenge_name_forge,challenges,Challenge,,Build a Forge
+builder_challenge_name_workbench,challenges,Challenge,,Build a Workbench
+builder_challenge_name_mixer,challenges,Challenge,,Build a Cement Mixer
+builder_challenge_name_chemstation,challenges,Challenge,,Build a Chem Station
+builder_challenge_name_axe,challenges,Challenge,,Make an Axe
+builder_challenge_name_pickaxe,challenges,Challenge,,Make a Pickaxe
+builder_challenge_name_wrench,challenges,Challenge,,Make a Wrench
+builder_challenge_name_shovel,challenges,Challenge,,Make a Shovel
+builder_challenge_name_hammer,challenges,Challenge,,Make a Hammer
+builder_challenge_name_crucible,challenges,Challenge,,Make a Crucible
+builder_challenge_subtitle_group,challenges,Challenge Group,,Outback Decay Builder
+builder_challenge_subtitle_forge,challenges,Challenge,,"You'll need a forge to make iron and steel."
+builder_challenge_subtitle_workbench,challenges,Challenge,,"You'll need a workbench to make tools."
+builder_challenge_subtitle_mixer,challenges,Challenge,,"You'll need a cement mixer to make concrete."
+builder_challenge_subtitle_chemstation,challenges,Challenge,,"You'll need a chem station to make gas and paint."
+builder_challenge_subtitle_axe,challenges,Challenge,,"Chop down trees!"
+builder_challenge_subtitle_pickaxe,challenges,Challenge,,"Mine some rocks!"
+builder_challenge_subtitle_wrench,challenges,Challenge,,"Take some stuff apart!"
+builder_challenge_subtitle_shovel,challenges,Challenge,,"Diggy diggy hole!"
+builder_challenge_subtitle_hammer,challenges,Challenge,,"If I had a hammer.."
+builder_challenge_subtitle_crucible,challenges,Challenge,,"You need steel."
+builder_challenge_desc,challenges,Challenge Group,,Outback Decay Builder Challenges
+builder_challenge_completion,challenges,Challenge Group,,"You're ready to build!"
